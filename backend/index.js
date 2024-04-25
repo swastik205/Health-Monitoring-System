@@ -13,14 +13,12 @@ const connection = async () => {
   try {
     const connect = await mongoose.connect(process.env.MONGO_URI);
     console.log("Successfully Connected");
-  } catch (e) {
-    console.log("error");
+  } catch (error) {
+    console.log({ error });
   }
 };
 
 connection();
-
-const port = 4000;
 
 app.get("/", (req, res) => {
   res.send("Hello World");
@@ -29,7 +27,6 @@ app.get("/", (req, res) => {
 app.use("/login", require("./routes/auth.js"));
 app.use("/user", require("./routes/showDetails.js"));
 
-app.listen(port, () => {
-  // console.log(process.env);
+app.listen(process.env.REACT_PORT, () => {
   console.log(`Listening on ${process.env.REACT_PORT}`);
 });

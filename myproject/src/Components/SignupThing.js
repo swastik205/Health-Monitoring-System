@@ -18,7 +18,7 @@ const SignupThing = () => {
   const [creds, setCreds] = useState({ username: "", email: "", password: "" });
 
   const onSubmit = async () => {
-    const response = await fetch("http://localhost:4000/login", {
+    const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

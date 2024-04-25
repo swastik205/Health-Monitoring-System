@@ -25,13 +25,16 @@ const LoginThing = () => {
       return;
     }
     try {
-      const response = await fetch("http://localhost:4000/login/check", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ username, password }),
-      });
+      const response = await fetch(
+        `${process.env.REACT_APP_BACKEND_URL}/login/check`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ username, password }),
+        }
+      );
 
       if (response.status === 200) {
         const data = await response.json();

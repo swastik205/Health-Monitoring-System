@@ -5,9 +5,12 @@ const DetailState = (props) => {
   var initialDetails = [];
   const [detail, setDetail] = useState(initialDetails);
   const getAll = async () => {
-    const response = await fetch("http://localhost:4000/user/details", {
-      method: "POST",
-    });
+    const response = await fetch(
+      `${process.env.REACT_APP_BACKEND_URL}/user/details`,
+      {
+        method: "POST",
+      }
+    );
     const data = await response.json();
     setDetail(data);
   };
