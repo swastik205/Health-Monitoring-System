@@ -1,0 +1,20 @@
+/* html {
+  height: auto;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background: linear-gradient(to bottom right, purple, violet, violet, purple);
+  background: -webkit-linear-gradient(30deg, rgb(72, 208, 231) 30%, #f6f6f6 50%, #222 100%);
+}
+
+*/
+/*midnight-blue: rgb(25,25,112) */
+
+body {
+  /* background-image: url(bck.jpg); */
+  background-color: #050D24;
+  font-family: "Poppins", sans-serif;
+}

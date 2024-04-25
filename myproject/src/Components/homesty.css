@@ -1,0 +1,5 @@
+@media (min-width: 768px) {
+    .hom {
+        grid-template-columns: 750px 1fr;
+    }
+}

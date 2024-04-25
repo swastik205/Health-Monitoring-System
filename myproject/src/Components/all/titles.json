@@ -1,0 +1,33 @@
+[
+    {
+        "id": 0,
+        "title1": "Heart",
+        "title2": "Rate",
+        "val": "85",
+        "unit": "bpm",
+        "desc": ""
+    },
+    {
+        "id": 1,
+        "title1": "Steps",
+        "title2": "",
+        "val": "102",
+        "unit": "",
+        "desc": "More 2000 steps to reach your goal"
+    },
+    {
+        "id": 2,
+        "title1": "Sleep",
+        "title2": "Track",
+        "val": "6h",
+        "unit": ""
+    },
+    {
+        "id": 3,
+        "title1": "SpO2",
+        "title2": "",
+        "val": "95",
+        "unit": "%",
+        "desc": "U have a pretty nice O\u2082 amount"
+    }
+]

@@ -1,0 +1,49 @@
+.fon {
+  font-family: 'Satisfy', cursive;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: 2px;
+}
+
+.foc:focus {
+  border: 3px solid;
+}
+
+.resiz {
+  width: 550px;
+}
+
+.tran {
+  transform: rotate(90deg);
+  margin-left: -120px;
+}
+
+.name {
+  text-shadow: -3px -3px white;
+}
+
+.container {
+  grid-template-columns: 1000px 1fr;
+}
+
+.login-form {
+  width: 300px;
+  height: 370px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.signup-form {
+  width: 300px;
+  height: 430px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.f-400 {
+  font-weight: 400;
+}
+
+.start {
+  text-shadow: 4px 4px 10px blue;
+}
