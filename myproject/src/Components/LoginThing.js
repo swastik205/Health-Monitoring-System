@@ -40,7 +40,7 @@ const LoginThing = () => {
         const data = await response.json();
         localStorage.setItem("token", data.authToken);
         navigate("/");
-        console.log(data);
+        // console.log(data);
       } else {
         alert("Enter Correct Credentials");
       }
